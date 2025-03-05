@@ -1,0 +1,8 @@
+.idea/
+global.json
+bin/
+obj/
+OrdersDeliveryApp.Data/Migrations/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/

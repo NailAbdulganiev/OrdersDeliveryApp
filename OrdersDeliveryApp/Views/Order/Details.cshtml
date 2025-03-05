@@ -1,0 +1,38 @@
+@model OrdersDeliveryApp.Services.DTOs.OrderDto
+
+<h1>Order Details</h1>
+
+<table class="table table-bordered">
+    <tbody>
+    <tr>
+        <th scope="row">Order Number</th>
+        <td>@Model.OrderNumber</td>
+    </tr>
+    <tr>
+        <th scope="row">Sender City</th>
+        <td>@Model.SenderCity</td>
+    </tr>
+    <tr>
+        <th scope="row">Sender Address</th>
+        <td>@Model.SenderAddress</td>
+    </tr>
+    <tr>
+        <th scope="row">Receiver City</th>
+        <td>@Model.ReceiverCity</td>
+    </tr>
+    <tr>
+        <th scope="row">Receiver Address</th>
+        <td>@Model.ReceiverAddress</td>
+    </tr>
+    <tr>
+        <th scope="row">Weight</th>
+        <td>@Model.Weight</td>
+    </tr>
+    <tr>
+        <th scope="row">Pickup Date</th>
+        <td>@Model.PickupDate.ToShortDateString()</td>
+    </tr>
+    </tbody>
+</table>
+
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>
